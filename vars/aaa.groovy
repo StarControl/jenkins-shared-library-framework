@@ -1,7 +1,9 @@
 def call() {
-  stage("manual stage 1"){
-    sh '''
-      echo "hola"
-      '''
+  node {
+    stage("manual stage 1"){
+      sh '''
+        echo "hola"
+        '''
+    }
   }
 }
